@@ -38,7 +38,7 @@ const DashboardBody = () => {
     );
   }
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mx:1 md:mx-3">
       <Box
         title="All product"
         icon={MdShoppingCart}
