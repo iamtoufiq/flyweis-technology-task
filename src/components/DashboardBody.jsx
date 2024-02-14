@@ -21,9 +21,6 @@ const DashboardBody = () => {
 
   const { data, loading, error } = useMultipleApi(endpoints);
 
-  console.log("data", data);
-  console.log("loading", loading);
-  console.log("error", error);
   const productCount = data && data[0]?.value?.products?.length;
   const categoryCount = data && data[1]?.value?.categories?.length;
   const subcategoryCount = data && data[2]?.value?.length;
