@@ -18,7 +18,7 @@ const SidebarItem = ({ data, isSelected, onItemClick }) => {
   return (
     <div
       onClick={handleClick}
-      className={`flex items-center gap-2 py-1 cursor-pointer w-full hover:bg-[#047DCE] transition duration-200 px-3 ${
+      className={`flex items-center gap-2 py-1 cursor-pointer w-full hover:bg-[#047DCE] transition duration-200 px-3 lg:px-4 ${
         isSelected && "bg-[#047DCE]"
       }  ${data.title === "Logout" ? "pt-4 pb-3" : ""}`}
     >
