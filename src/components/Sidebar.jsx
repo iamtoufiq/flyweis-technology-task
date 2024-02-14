@@ -6,12 +6,11 @@ const Sidebar = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
   return (
-    // <aside className="flex flex-col flex-shrink-0   bg-[#00AB7F] h-screen overflow-y-scroll example text-[#FFFFFF] max-w-fit md:min-w-[20%] md:max-w-fit max-lg:w-fit pt-4  lg:max-w-fit">
     <aside className="flex flex-col flex-shrink-0 bg-[#00AB7F] h-screen overflow-y-scroll example text-[#FFFFFF] max-w-full md:max-w-[20%] xl:max-w-fit pt-4 lg:px-4">
       <h2 className="hidden md:block uppercase  py-6 text-xl  px-3 font-[500]">
         Admin panel
       </h2>
-      <h2 className="block md:hidden uppercase  py-2 text-xl font-[500] px-3">
+      <h2 className="block md:hidden uppercase  py-2 text-xl font-[500] px-3 pb-3">
         A
       </h2>
       <div className="flex flex-col items-start w-[100%] gap-3 md:gap-1">

@@ -1,7 +1,6 @@
-// useMultipleApi.js
 import { useState, useEffect } from "react";
 
-const baseUrl = "https://chetan-project-backend.vercel.app/";
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 const useMultipleApi = (endpoints) => {
   const [data, setData] = useState(null);
@@ -14,7 +13,7 @@ const useMultipleApi = (endpoints) => {
         setLoading(true);
 
         const urls = endpoints.map((endpoint) => `${baseUrl}${endpoint}`);
-        const responses = await Promise.all(
+        const responses = await Promise.allSettled(
           urls.map((url) => fetch(url).then((res) => res.json()))
         );
 

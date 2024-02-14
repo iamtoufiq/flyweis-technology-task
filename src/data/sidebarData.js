@@ -1,19 +1,16 @@
 import { AiOutlineLogout } from "react-icons/ai";
-import { MdDashboard } from "react-icons/md";
-import { FaRegUser } from "react-icons/fa6";
-import { MdCategory } from "react-icons/md";
-import { FaShoppingCart } from "react-icons/fa";
-import { IoBagCheck } from "react-icons/io5";
+import {
+  MdDashboard,
+  MdCategory,
+  MdAssignmentReturn,
+  MdPrivacyTip,
+} from "react-icons/md";
+import { FaBell, FaShoppingCart, FaKey, FaUser } from "react-icons/fa";
+import { IoBagCheck, IoCloudUpload } from "react-icons/io5";
 import { BsBagXFill } from "react-icons/bs";
 import { IoMdHelpCircle } from "react-icons/io";
-import { MdPrivacyTip } from "react-icons/md";
-import { FaBell } from "react-icons/fa";
 import { CiWallet } from "react-icons/ci";
 import { RiUserSearchLine } from "react-icons/ri";
-import { MdAssignmentReturn } from "react-icons/md";
-import { FaKey } from "react-icons/fa";
-import { IoCloudUpload } from "react-icons/io5";
-import { FaUser } from "react-icons/fa";
 export const sidebarData = [
   {
     title: "Dashboard",
