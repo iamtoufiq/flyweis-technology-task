@@ -7,8 +7,9 @@ import React, {
 } from "react";
 import useMultipleApi from "../hook/useMultipleApi";
 
-const initlilValue = {
+const initialValue = {
   products: [],
+  originalProducts: [],
   categories: [],
   subCategories: [],
   users: [],
@@ -31,7 +32,9 @@ const ContextProvider = ({ children }) => {
 
   const { data, loading, error } = useMultipleApi(endpoints);
 
-  const [contextData, setContextData] = useState(initlilValue);
+  const [contextData, setContextData] = useState(initialValue);
+  const [searchResults, setSearchResults] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     if (!loading && !error) {
@@ -43,11 +46,35 @@ const ContextProvider = ({ children }) => {
         unconfirmedOrders: data[4]?.value?.unconfirmedOrders || [],
       };
       setContextData(newContextData);
+
+      // If there is a search term, filter the data
+      if (searchTerm) {
+        const filteredResults = filterData(newContextData, searchTerm);
+        setSearchResults(filteredResults);
+      }
     }
-  }, [data, loading, error]);
+  }, [data, loading, error, searchTerm]);
+
+  const filterData = (data, term) => {
+    // Implement your custom search logic here
+    // For simplicity, this example searches in user names
+    return data.users.filter(
+      (user) =>
+        user &&
+        user.name &&
+        user.name.toLowerCase().includes(term.toLowerCase())
+    );
+  };
+
+  const search = (term) => {
+    // Update the search term state, which will trigger the useEffect
+    setSearchTerm(term);
+  };
 
   return (
-    <dataContext.Provider value={{ ...contextData, loading }}>
+    <dataContext.Provider
+      value={{ ...contextData, loading, searchResults, search }}
+    >
       {children}
     </dataContext.Provider>
   );

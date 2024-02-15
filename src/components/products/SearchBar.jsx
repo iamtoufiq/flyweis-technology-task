@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { IoOptionsSharp } from "react-icons/io5";
 
 const SearchBar = ({ handleChange, searchTerm }) => {
@@ -12,8 +11,8 @@ const SearchBar = ({ handleChange, searchTerm }) => {
         type="text"
         placeholder={"Start typing to search for user"}
         className={`w-full outline-none border border-gray-300 rounded-sm py-[6px] px-4 `}
-        value={searchTerm}
-        onChange={handleChange}
+        // value={searchTerm}
+        // onChange={handleChange}
       />
     </div>
   );

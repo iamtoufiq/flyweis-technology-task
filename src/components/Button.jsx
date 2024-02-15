@@ -7,13 +7,14 @@ const CustomButton = ({
   paddingY = "py-2",
   paddingX = "px-3",
   cursorStyle = "cursor-pointer",
+  Icon,
 }) => {
   return (
     <button
       onClick={onClick ? onClick : undefined}
-      className={`bg-[${bgColor}]  ${paddingY} ${paddingX} ${cursorStyle}`}
+      className={`flex gap-1 items-center text-white bg-[${bgColor}]  ${paddingY} ${paddingX} ${cursorStyle}`}
     >
-      {label}
+      {label} {!!Icon && <Icon size={19} className="text-white" />}
     </button>
   );
 };
