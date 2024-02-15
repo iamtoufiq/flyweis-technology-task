@@ -2,7 +2,7 @@ import React from "react";
 import { MdDashboard } from "react-icons/md";
 const SidebarItem = ({ data, isSelected, onItemClick }) => {
   const IconComponent = data?.icon || MdDashboard;
-  console.log("data", data);
+
   return (
     <div
       onClick={() => onItemClick(data?.title)}
