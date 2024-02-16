@@ -9,7 +9,7 @@ import Products from "../pages/Products";
 import Error from "../pages/Error";
 const AdminDashboard = () => {
   return (
-    <div className="w-full h-screen overflow-y-scroll flex flex-col gap-2 pb-5 example p-4 pt-6 max-w-5xl m-auto">
+    <div className="w-full h-screen overflow-y-scroll flex flex-col gap-2 pb-5 example p-4 pt-6 max-w-7xl m-auto">
       <Header />
 
       <Routes>

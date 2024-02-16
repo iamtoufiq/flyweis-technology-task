@@ -81,7 +81,7 @@ const Table = ({ allUsers }) => {
                   </td>
                   <td
                     className={`px-2 py-2 md:px-4 md:py-3 lg:px-6 lg:py-4 ${
-                      !user?.name && "text-center text-[20px]"
+                      !user?.name && "text-[20px] text-start"
                     }`}
                   >
                     {user?.name ? user?.name : "-"}
@@ -89,7 +89,7 @@ const Table = ({ allUsers }) => {
 
                   <td
                     className={`px-2 py-2 md:px-4 md:py-3 lg:px-6 lg:py-4 ${
-                      !user?.phone && "text-center text-[20px]"
+                      !user?.phone && "text-start text-[20px]"
                     }`}
                   >
                     {user?.phone ? user?.phone : "-"}

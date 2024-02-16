@@ -52,15 +52,19 @@ const Table = ({ categories }) => {
                   <td
                     className={`px-2 py-2 md:px-4 md:py-3 lg:px-6 lg:py-4 w-32 h-32`}
                   >
-                    <img src={category.image} alt="" />
+                    <img src={category?.image} alt="" />
                   </td>
-                  <td className={`px-2 py-2 md:px-4 md:py-3 lg:px-6 lg:py-4 `}>
+                  <td
+                    className={`px-2 py-2 md:px-4 md:py-3 lg:px-6 lg:py-4 ${
+                      !category?.subCategory && "text-center text-[20px]"
+                    }`}
+                  >
                     {category?.subCategory ? category?.subCategory : "-"}
                   </td>
                   <td
                     className={`px-2 py-2 md:px-4 md:py-3 lg:px-6 lg:py-4 ${
                       !category?.parentCategory?.name &&
-                      "text-center text-[20px]"
+                      "text-[20px] text-start"
                     }`}
                   >
                     {category?.parentCategory
