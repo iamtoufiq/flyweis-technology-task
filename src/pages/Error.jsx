@@ -11,7 +11,7 @@ const Error = () => {
       </h1>
       <CustomButton
         label="Back to Home page"
-        bgColor="#00ab7f"
+        bgColor="bg-[#00ab7f]"
         onClick={() => navigate("/")}
       />
     </div>

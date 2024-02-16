@@ -60,6 +60,7 @@ const DashboardBody = () => {
         icon={BsHandbagFill}
         number={unconfirmedOrders?.length}
         bgColor="#FF9B3F"
+        path="/notfound"
       />
     </div>
   );
