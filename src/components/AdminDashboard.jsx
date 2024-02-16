@@ -18,7 +18,7 @@ const AdminDashboard = () => {
         <Route path="/category" element={<MainCategory />} />
         <Route path="/subcategory" element={<SubCategory />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/*" element={<Error />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
