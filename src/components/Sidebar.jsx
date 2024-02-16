@@ -16,6 +16,7 @@ const Sidebar = () => {
         Admin panel
       </h2>
       <h2
+        onClick={() => navigate("/")}
         className="block md:hidden uppercase py-2 text-[38px] font-[500] px-3 pb-3 border-white"
         style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)" }}
       >
