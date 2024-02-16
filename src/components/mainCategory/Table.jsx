@@ -4,9 +4,8 @@ import { TbPencilMinus } from "react-icons/tb";
 const defaultImage =
   "https://res.cloudinary.com/dtijhcmaa/image/upload/v1707927580/images/image/tscsl2qb1ym4rlbwfohh.png";
 const Table = ({ categories }) => {
-  console.log("categories", categories);
   return (
-    <div className="relative overflow-x-auto">
+    <div className="relative overflow-x-auto example">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr className="bg-white text-black border-b border-t">
@@ -62,11 +61,11 @@ const Table = ({ categories }) => {
                   <td className="px-2 py-2 md:px-4 md:py-3 lg:px-6 lg:py-4 ">
                     <div className="flex items-center gap-2 md:gap-3">
                       <span className="border p-[6px] rounded-full text-[#E50505] bg-[#FACDCD]">
-                        <FaRegTrashAlt size={25} />
+                        <FaRegTrashAlt size={20} />
                       </span>
 
                       <span className="border p-[6px] rounded-full text-[#047DCE] bg-[#CDE5F5]">
-                        <TbPencilMinus size={25} />
+                        <TbPencilMinus size={20} />
                       </span>
                     </div>
                   </td>

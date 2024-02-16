@@ -1,6 +1,5 @@
-import React from "react";
-import Header from "../components/mainCategory/Header";
 import { useGlobalHook } from "../context/ContextProvider";
+import Header from "../components/mainCategory/Header";
 import Loader from "../components/Loader";
 import Table from "../components/subCategory/Table";
 

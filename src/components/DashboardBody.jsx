@@ -1,12 +1,10 @@
 import React from "react";
-import Box from "./Box";
-import { MdCategory } from "react-icons/md";
-import { MdShoppingCart } from "react-icons/md";
+import { MdCategory, MdShoppingCart } from "react-icons/md";
 import { IoFolder } from "react-icons/io5";
 import { BsHandbagFill } from "react-icons/bs";
 import { FaUserLarge } from "react-icons/fa6";
 import { useGlobalHook } from "../context/ContextProvider";
-// import useMultipleApi from "../hook/useMultipleApi";
+import Box from "./Box";
 import Loader from "./Loader";
 const DashboardBody = () => {
   const {
@@ -27,30 +25,35 @@ const DashboardBody = () => {
         icon={MdShoppingCart}
         number={products?.length}
         bgColor="#3C335D"
+        path="/products"
       />
       <Box
         title="All Category"
         icon={MdCategory}
         number={categories?.length}
         bgColor="#023B5B"
+        path="/category"
       />
       <Box
         title="All Sub-Category"
         icon={IoFolder}
         number={subCategories?.length}
         bgColor="#72909E"
+        path="/subcategory"
       />
       <Box
         title="All User"
         icon={FaUserLarge}
         number={users?.length}
         bgColor="#2F6967"
+        path="/userlist"
       />
       <Box
         title="All Sub-Category"
         icon={BsHandbagFill}
         number={subCategories?.length}
         bgColor="#72909E"
+        path="/subcategory"
       />
       <Box
         title="Not Delivered"

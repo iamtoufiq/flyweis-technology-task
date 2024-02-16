@@ -15,20 +15,25 @@ export const sidebarData = [
   {
     title: "Dashboard",
     icon: MdDashboard,
+    path: "/",
   },
   {
     title: "User List",
     icon: FaUser,
+    path: "/userlist",
   },
   {
     title: "Category",
     icon: MdCategory,
+    path: "/category",
   },
   {
     title: "Sub-category",
+    path: "/subcategory",
   },
   {
     title: "Product",
+    path: "/products",
     icon: FaShoppingCart,
   },
   {
@@ -101,6 +106,7 @@ export const sidebarData = [
   },
   {
     title: "Logout",
+
     icon: AiOutlineLogout,
   },
 ];

@@ -1,5 +1,3 @@
-import React from "react";
-
 const SearchInput = ({ placeholder, className }) => {
   return (
     <input

@@ -1,4 +1,3 @@
-import React from "react";
 import { RiMenu4Fill } from "react-icons/ri";
 const Header = () => {
   return (

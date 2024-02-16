@@ -1,7 +1,11 @@
-const Box = ({ title, icon: Icon, number, bgColor }) => {
+import { useNavigate } from "react-router-dom";
+
+const Box = ({ title, icon: Icon, number, bgColor, path }) => {
+  const navigate = useNavigate();
   return (
     <div
-      className={`flex w-full border justify-between bg-[#3C335D] text-white   px-6 md:px-8 items-center rounded-xl py-5  md:py-7`}
+      onClick={() => navigate(`${path}`)}
+      className={`flex w-full cursor-pointer border justify-between bg-[#3C335D] text-white   px-6 md:px-8 items-center rounded-xl py-5  md:py-7`}
       style={{ backgroundColor: bgColor }}
     >
       <div className="left">
